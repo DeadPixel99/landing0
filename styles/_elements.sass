@@ -1,0 +1,63 @@
+.btn
+  @extend .bold
+  display: inline-block
+  border-radius: 22px
+  padding: 12px 30px
+  margin: 24px 0
+  background: #00FFAD
+  color: #192440
+  font-size: 1rem
+
+  &:hover
+    cursor: pointer
+
+
+.btn-green
+  @extend .btn
+  background: #00FFAD
+  color: #192440
+  transition: color 150ms linear
+
+  &:hover
+    color: white
+    background: #00E69C
+
+.btn-black
+  @extend .btn
+  background: #192440
+  color: #ffffff
+  transition: transform 150ms linear
+
+  &:hover
+    transform: translateY(-5px)
+
+.brand-text
+  &:hover
+    text-decoration: underline white
+
+.content-blocks-figure
+  position: absolute
+  height: 100%
+  width: 300%
+  left: 50%
+  background-color: #00FFAD
+  z-index: -1
+  transform: skew(65deg, 0deg) rotateX(180deg)
+
+.relative
+  position: relative
+
+.no-overflow
+  overflow: hidden
+
+.no-scroll
+  overflow: hidden
+
+input[type="submit"]
+  border: none
+  display: block
+  width: 100%
+
+a
+  color: white
+  text-decoration: none
