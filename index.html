@@ -127,8 +127,8 @@
     <div class="contact-form">
         <div class="container">
             <div class="contact-info">
-                <p class="container-title animate" data-aname="appear" data-adelay="200">Contact Us</p>
-                <p class="animate" data-aname="appear" data-adelay="500">
+                <p class="container-title animate" data-aname="appear">Contact Us</p>
+                <p class="animate" data-aname="appear" data-adelay="200">
                     Te iisque labitur eos, nec sale argumentum scribentur,
                     augue disputando in vim. Erat fugit sit at, ius lorem.
                     <br><br>
@@ -137,23 +137,19 @@
                     Address : 4826 White Avenue, Corpus Christi, Texas<br>
                 </p>
             </div>
-            <div class="send-letter">
+            <div class="send-letter animate" data-aname="appear" data-adelay="400">
                 <form>
-                    <div class="form-row">
-                        <div class="form-col">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name"/>
-                        </div>
-                        <div class="form-col">
-                            <label for="mail">Your Email</label>
-                            <input type="email" id="mail"/>
-                        </div>
+                    <div class="form-input">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name"/>
                     </div>
-                    <div class="form-row">
-                        <div class="form-col">
-                            <label for="message">Message</label>
-                            <textarea id="message"></textarea>
-                        </div>
+                    <div class="form-input">
+                        <label for="mail">Your Email</label>
+                        <input type="email" id="mail"/>
+                    </div>
+                    <div class="form-input">
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
                     </div>
                     <input type="submit" class="btn-green" value="Submit"/>
                 </form>

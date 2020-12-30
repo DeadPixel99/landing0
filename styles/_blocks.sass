@@ -92,23 +92,23 @@
     justify-content: space-between
     align-items: flex-start
 
-
-
-  div
-    flex: 0 0 40%
-
     .contact-info
+      flex: 0 0 40%
+
       .container-title
         text-align: left
         margin-top: 0
 
-    .send-letter
-      form
 
+    .send-letter
+      flex: 0 0 40%
+
+      form
         input[type="text"], input[type="email"], textarea
           background: rgba(0,0,0,0)
           border: 1px solid #00ffad
           border-radius: .25rem
+
 
 footer
   background-color: rgba(0,28,103,1)
@@ -122,34 +122,36 @@ footer
     font-size: 2.5rem
 
 form
-  .form-row
-    display: flex
-    margin: 0 -15px
+
+  .form-input
+    display: block
+    width: 100%
+    color: #00FFAD
 
     .form-col
       flex: 1
-      color: #00FFAD
       padding: 0 15px
 
-      *
-        display: block
+    *
+      display: block
 
-      *:focus
-        outline-color: transparent
-        outline-style: none
+    *:focus
+      outline-color: transparent
+      outline-style: none
 
 
-      label
-        margin: 5px 0
+    label
+      margin: 5px 0
 
-      input, textarea
-        caret-color: white
-        padding: .5rem .75rem
-        font-size: 1rem
-        line-height: 1.25
+    input, textarea
+      caret-color: white
+      color: white
+      padding: .5rem .75rem
+      font-size: 1rem
+      line-height: 1.25
+      box-sizing: border-box
+      width: 100%
 
-      textarea
-        height: 150px
-        resize: none
-        box-sizing: border-box
-        width: 100%
+    textarea
+      height: 150px
+      resize: none

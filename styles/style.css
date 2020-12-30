@@ -189,14 +189,17 @@ a {
   justify-content: space-between;
   align-items: flex-start;
 }
-.contact-form div {
+.contact-form .container .contact-info {
   flex: 0 0 40%;
 }
-.contact-form div .contact-info .container-title {
+.contact-form .container .contact-info .container-title {
   text-align: left;
   margin-top: 0;
 }
-.contact-form div .send-letter form input[type=text], .contact-form div .send-letter form input[type=email], .contact-form div .send-letter form textarea {
+.contact-form .container .send-letter {
+  flex: 0 0 40%;
+}
+.contact-form .container .send-letter form input[type=text], .contact-form .container .send-letter form input[type=email], .contact-form .container .send-letter form textarea {
   background: rgba(0, 0, 0, 0);
   border: 1px solid #00ffad;
   border-radius: 0.25rem;
@@ -214,36 +217,37 @@ footer div.soc-networks {
   font-size: 2.5rem;
 }
 
-form .form-row {
-  display: flex;
-  margin: 0 -15px;
-}
-form .form-row .form-col {
-  flex: 1;
+form .form-input {
+  display: block;
+  width: 100%;
   color: #00FFAD;
+}
+form .form-input .form-col {
+  flex: 1;
   padding: 0 15px;
 }
-form .form-row .form-col * {
+form .form-input * {
   display: block;
 }
-form .form-row .form-col *:focus {
+form .form-input *:focus {
   outline-color: transparent;
   outline-style: none;
 }
-form .form-row .form-col label {
+form .form-input label {
   margin: 5px 0;
 }
-form .form-row .form-col input, form .form-row .form-col textarea {
+form .form-input input, form .form-input textarea {
   caret-color: white;
+  color: white;
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
   line-height: 1.25;
-}
-form .form-row .form-col textarea {
-  height: 150px;
-  resize: none;
   box-sizing: border-box;
   width: 100%;
+}
+form .form-input textarea {
+  height: 150px;
+  resize: none;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -270,8 +274,31 @@ form .form-row .form-col textarea {
   .soc-networks {
     display: flex;
     justify-content: space-between;
-    width: 70%;
     font-size: 2rem !important;
+  }
+
+  footer div {
+    width: 45%;
+  }
+
+  .tiles .tile-card {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-form .container {
+    align-items: center;
+  }
+  .contact-form .container .contact-info {
+    width: 35%;
+  }
+
+  .form-row {
+    flex-direction: column !important;
+  }
+  .form-row .form-col input {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 @keyframes Appear {
