@@ -1,11 +1,14 @@
 // flex box direction
-@media (min-width: 320px) and (max-width: 480px)
+@media (min-width: 320px) and (max-width: 900px)
   .tiles, .contact-form .container, .form-row, .partners-list, .info-box
     flex-direction: column !important
 
   .contact-form
     .container
       align-items: center
+
+  .send-letter
+    width: 100%
 
   .container, footer
     padding: 5% 12%
@@ -29,20 +32,20 @@
     .tile-card
       margin: 0
 
-@media (min-width: 768px) and (max-width: 1024px)
-  .contact-form
-    .container
-      align-items: center
-
-      .contact-info
-        width: 35%
-
-
-  .form-row
-    flex-direction: column !important
-
-    .form-col
-      input
-        width: 100%
-        box-sizing: border-box
+//@media (min-width: 768px) and (max-width: 1024px)
+//  .contact-form
+//    .container
+//      align-items: center
+//
+//      .contact-info
+//        width: 35%
+//
+//
+//  .form-row
+//    flex-direction: column !important
+//
+//    .form-col
+//      input
+//        width: 100%
+//        box-sizing: border-box
 
